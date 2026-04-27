@@ -1,0 +1,92 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all var(--transition-medium);
+  padding: 1.5rem 0;
+}
+
+/* Navbar after scrolling */
+.navbar.scrolled {
+  background: rgba(23, 65, 67, 0.9); /* #174143 with transparency */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 30px rgba(23, 65, 67, 0.35);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar logo */
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary); /* changed from blue PRIMARY */
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.nav-logo:hover {
+  text-shadow: 0 0 12px rgba(249, 180, 135, 0.4); /* peach glow */
+}
+
+/* Menu container */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.nav-menu li {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Hover underline */
+.nav-menu li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary); /* peach instead of blue */
+  transition: width var(--transition-medium);
+}
+
+/* Hover text color */
+.nav-menu li:hover {
+  color: var(--secondary); /* peach */
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+}
