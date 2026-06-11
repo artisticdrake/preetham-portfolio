@@ -23,41 +23,6 @@ export default function StatusBadge({ status }: StatusBadgeProps) {
   )
 }
 
-const SCRAMBLE_CHARS = '!<>-_\\/[]{}=+*^?#ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-// Scrambles toward `target` whenever it changes: characters resolve
-// left-to-right while unresolved ones flicker through random glyphs.
-function useScrambleText(target: string, durationMs = 700): string {
-  const [text, setText] = useState(target)
-
-  useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setText(target)
-      return
-    }
-
-    let frame = 0
-    const totalFrames = Math.round(durationMs / 30)
-    const id = setInterval(() => {
-      frame++
-      const resolved = Math.floor((target.length * frame) / totalFrames)
-      let out = ''
-      for (let i = 0; i < target.length; i++) {
-        if (i < resolved || target[i] === ' ') out += target[i]
-        else out += SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)]
-      }
-      setText(out)
-      if (frame >= totalFrames) {
-        setText(target)
-        clearInterval(id)
-      }
-    }, 30)
-    return () => clearInterval(id)
-  }, [target, durationMs])
-
-  return text
-}
-
 const BADGE_LABELS = ['Open to Work', 'Work Authorization']
 
 // Navbar / hero "Open to Work" badge — click reveals work-authorization details
@@ -65,7 +30,7 @@ export function NavStatusBadge({ compact = false }: { compact?: boolean }) {
   const [open, setOpen] = useState(false)
   const [labelIdx, setLabelIdx] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
-  const label = useScrambleText(BADGE_LABELS[labelIdx])
+  const label = BADGE_LABELS[labelIdx]
 
   // Cycle the compact label every 5s; hold still while the popover is open
   useEffect(() => {
@@ -101,8 +66,19 @@ export function NavStatusBadge({ compact = false }: { compact?: boolean }) {
         {compact ? (
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse-dot" />
-            <span className="inline-block w-[7.5rem] whitespace-nowrap text-left text-xs text-brand-secondary group-hover:text-brand-primary transition-colors font-sans">
-              {label}
+            <span className="inline-block w-[7.5rem] whitespace-nowrap text-left text-xs text-brand-secondary group-hover:text-brand-primary transition-colors font-sans overflow-hidden">
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.span
+                  key={label}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                  className="block"
+                >
+                  {label}
+                </motion.span>
+              </AnimatePresence>
             </span>
             <ChevronDown
               size={11}
