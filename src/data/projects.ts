@@ -85,6 +85,7 @@ export const projects: Project[] = [
     status: 'active',
     links: {
       github: 'https://github.com/artisticdrake/Chronicle',
+      youtube: 'https://youtu.be/fOEVA3Fsg6E',
     },
     size: 'large',
   },

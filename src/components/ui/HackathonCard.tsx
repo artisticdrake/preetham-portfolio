@@ -76,6 +76,19 @@ export default function HackathonCard({ hackathon }: HackathonCardProps) {
         {hackathon.description}
       </p>
 
+      {hackathon.youtube && (
+        <a
+          href={hackathon.youtube}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-umami-event="hackathon-demo"
+          data-umami-event-name={hackathon.name}
+          className="text-xs font-mono text-brand-cyan hover:text-brand-primary transition-colors flex items-center gap-1 w-fit mb-4"
+        >
+          Watch Demo →
+        </a>
+      )}
+
       <div className="flex flex-wrap gap-1.5">
         {hackathon.tech.map(t => (
           <TechPill key={t} label={t} />

@@ -15,6 +15,7 @@ export interface Hackathon {
   /** Big right-aligned achievement figure (falls back to prize) + its sublabel */
   stat?: string
   statLabel?: string
+  youtube?: string
   teamSize: number
   totalTeams: number | null
   projectId: string
@@ -35,6 +36,7 @@ export const hackathons: Hackathon[] = [
     prize: '$4,000',
     stat: '$4,000',
     statLabel: 'Prize Awarded',
+    youtube: 'https://www.youtube.com/watch?v=bjEPVhkSdC0',
     teamSize: 4,
     totalTeams: 6,
     projectId: 'nest-vnn',
@@ -87,6 +89,7 @@ export const hackathons: Hackathon[] = [
     prize: null,
     stat: 'Selected',
     statLabel: 'FOMO Investor Intros',
+    youtube: 'https://youtu.be/fOEVA3Fsg6E',
     teamSize: 3,
     totalTeams: null,
     projectId: 'chronicle',
