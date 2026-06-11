@@ -128,7 +128,7 @@ export default function Hero() {
                 View Projects
               </a>
               <a
-                href="/Preetham_Prathipati_Resume.pdf"
+                href="/resume/Resume_Preetham_Prathipati.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-umami-event="resume-download"

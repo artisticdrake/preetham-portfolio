@@ -105,7 +105,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <NavStatusBadge compact />
             <a
-              href="/Preetham_Prathipati_Resume.pdf"
+              href="/resume/Resume_Preetham_Prathipati.pdf"
               target="_blank"
               rel="noopener noreferrer"
               data-umami-event="resume-download"
@@ -148,7 +148,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="/Preetham_Prathipati_Resume.pdf"
+                href="/resume/Resume_Preetham_Prathipati.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
