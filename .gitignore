@@ -10,6 +10,13 @@
 
 # production
 /build
+/dist
+
+# personal source notes — keep out of the public repo
+master_profile_v2.json
+preetham.md
+portfolio_info.md
+CLAUDE_CODE_PROMPT_Portfolio_v2.md
 
 # misc
 .DS_Store
