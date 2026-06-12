@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Trophy, Medal, Award, Sparkles } from 'lucide-react'
+import { Trophy } from 'lucide-react'
 import { useCountUp } from '../../hooks/useCountUp'
 import { fadeUp, staggerContainer, viewportOnce, EASE } from '../../lib/motion'
 import SectionHeading from '../ui/SectionHeading'
@@ -98,7 +98,7 @@ export default function Awards() {
           className="relative rounded-xl border border-white/[0.06] bg-brand-surface p-7 hover:border-white/[0.14] transition-colors duration-300"
         >
           <div className="flex items-center gap-3 mb-4">
-            <Medal size={20} className="text-brand-cyan shrink-0" />
+            <Trophy size={20} className="text-brand-cyan shrink-0" />
             <h3 className="font-sans font-semibold text-brand-primary leading-tight">
               National ML Ranking
             </h3>
@@ -125,7 +125,7 @@ export default function Awards() {
         >
           <div className="flex items-start justify-between gap-6 flex-wrap mb-4">
             <div className="flex items-center gap-3">
-              <Award size={20} className="text-brand-cyan shrink-0" />
+              <Trophy size={20} className="text-brand-cyan shrink-0" />
               <div>
                 <h3 className="font-sans font-semibold text-brand-primary text-lg leading-tight">
                   Music Hackspace Boston Hackathon
@@ -165,7 +165,7 @@ export default function Awards() {
           className="relative rounded-xl border border-white/[0.06] bg-brand-surface p-7 hover:border-white/[0.14] transition-colors duration-300"
         >
           <div className="flex items-center gap-3 mb-4">
-            <Sparkles size={20} className="text-brand-cyan shrink-0" />
+            <Trophy size={20} className="text-brand-cyan shrink-0" />
             <h3 className="font-sans font-semibold text-brand-primary leading-tight">
               Selected for Investor Intros
             </h3>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Trophy, Users, Calendar, MapPin, Sparkles } from 'lucide-react'
+import { Trophy, Users, Calendar, MapPin } from 'lucide-react'
 import { Hackathon } from '../../data/hackathons'
 import { EASE } from '../../lib/motion'
 import TechPill from './TechPill'
@@ -13,7 +13,6 @@ export default function HackathonCard({ hackathon }: HackathonCardProps) {
   // Placements and selections without prize money still deserve the accent treatment
   const isNotable = isWinner || hackathon.result !== 'Participated'
   const stat = hackathon.stat ?? hackathon.prize
-  const isPlacement = isWinner || /place/i.test(hackathon.result)
 
   return (
     <motion.div
@@ -38,11 +37,7 @@ export default function HackathonCard({ hackathon }: HackathonCardProps) {
       <div className="flex items-start justify-between gap-4 mb-4 flex-wrap">
         <div>
           <div className="flex items-center gap-2 mb-1 flex-wrap">
-            {isNotable && (
-              isPlacement
-                ? <Trophy size={16} className="text-brand-cyan shrink-0" />
-                : <Sparkles size={16} className="text-brand-cyan shrink-0" />
-            )}
+            {isNotable && <Trophy size={16} className="text-brand-cyan shrink-0" />}
             <h3 className="font-serif text-xl text-brand-primary">{hackathon.name}</h3>
           </div>
           <p className="text-xs font-mono text-brand-muted">{hackathon.track}</p>
