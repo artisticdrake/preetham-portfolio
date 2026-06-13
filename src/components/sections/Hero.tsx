@@ -91,25 +91,24 @@ export default function Hero() {
               variants={fadeUp}
               className="text-[11px] font-mono text-brand-cyan tracking-[0.2em] uppercase"
             >
-              LLM / GENAI ENGINEER · NLP · ML ENGINEER
+               GENAI & ML ENGINEER · NLP · LLMs · RAG 
             </motion.p>
 
             {/* Tagline */}
             <motion.p variants={fadeUp} className="text-4xl md:text-5xl xl:text-6xl leading-[1.1] tracking-tight">
-              <span className="font-sans font-semibold text-brand-primary">Building ML systems</span>
+              <span className="font-sans font-semibold text-brand-primary">Production focused</span>
               <br />
-              <span className="font-sans font-semibold text-brand-primary">that{' '}</span>
-              <em className="font-serif italic text-brand-primary">actually</em>
-              <span className="font-sans font-semibold text-brand-primary">{' '}ship.</span>
+              <span className="font-sans font-semibold text-brand-primary">ML & GenAI{' '}</span>
+              {/* <em className="font-serif italic text-brand-primary">ML & GenAI</em> */}
+              <span className="font-sans font-semibold text-brand-primary">{' '}engineer.</span>
             </motion.p>
 
             {/* Body */}
             <motion.p variants={fadeUp} className="text-[15px] text-brand-secondary leading-relaxed max-w-lg">
-              MS Computer Science @ Boston University — May 2026.<br />
-              I build LLM pipelines and RAG systems end-to-end,
-              and ship products to real users.<br />
+              MS Computer Science @ Boston University, 2026.<br />
+              I build LLM pipelines and RAG systems end-to-end.<br />
               Ranked <span className="text-brand-primary font-mono">2nd of 364</span> nationally in IIIT Hyderabad's ML program.
-              Won <span className="text-brand-cyan font-mono font-medium">$4,000</span> building cancer AI at Bio-IT World 2026,
+              Won <span className="text-brand-cyan font-mono font-medium">$4,000</span>  for interpretable cancer-prediction AI at Bio-IT World 2026 hackathon
               then placed <span className="text-brand-cyan font-mono font-medium">3rd</span> at Music Hackspace Boston (Berklee).
             </motion.p>
 
