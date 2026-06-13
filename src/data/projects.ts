@@ -12,6 +12,7 @@ export interface Project {
     github?: string
     demo?: string
     youtube?: string
+    slides?: string
   }
   size: 'large' | 'medium' | 'small'
 }
@@ -57,6 +58,7 @@ export const projects: Project[] = [
     status: 'prize',
     links: {
       github: 'https://github.com/artisticdrake/PocketBand',
+      slides: 'https://gamma.app/docs/PocketBand-sbenr5xhrq99bzo?mode=doc',
     },
     size: 'large',
   },

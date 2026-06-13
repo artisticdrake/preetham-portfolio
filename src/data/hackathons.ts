@@ -16,12 +16,16 @@ export interface Hackathon {
   stat?: string
   statLabel?: string
   youtube?: string
+  /** Link to the hackathon's official project/submission page. */
+  projectUrl?: string
   teamSize: number
   totalTeams: number | null
   projectId: string
   description: string
   tech: string[]
   featured: boolean
+  /** Force the cyan halo/accent treatment even when the result isn't a placement. */
+  highlight?: boolean
   photos: HackathonPhoto[]
 }
 
@@ -61,6 +65,7 @@ export const hackathons: Hackathon[] = [
     prize: null,
     stat: '3rd',
     statLabel: 'Place Awarded',
+    projectUrl: 'https://musichackspace.org/events/hackathon-boston-june-2026/projects/169',
     teamSize: 2,
     totalTeams: null,
     projectId: 'pocketband',
@@ -122,6 +127,7 @@ export const hackathons: Hackathon[] = [
       'Built Space Pirates — a local multiplayer party brawler in Godot 4, phone gyroscope as controller over Socket.IO.',
     tech: ['Godot 4 (GDScript)', 'Node.js', 'Socket.IO'],
     featured: false,
+    highlight: true,
     photos: [
       { src: '/images/hackathons/sharkhack-2026/photo-1.jpg', alt: 'SharkHack 2026' },
       { src: '/images/hackathons/sharkhack-2026/photo-2.jpg', alt: 'SharkHack 2026' },

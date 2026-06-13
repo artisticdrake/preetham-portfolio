@@ -1,6 +1,6 @@
 import { useRef, MouseEvent } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Presentation } from 'lucide-react'
 import { FaGithub, FaYoutube } from 'react-icons/fa'
 import { Project } from '../../data/projects'
 import { EASE } from '../../lib/motion'
@@ -45,7 +45,7 @@ export default function ProjectCard({ project, index = 0, className = '' }: Proj
       whileInView="visible"
       viewport={{ once: true, margin: '-40px' }}
       className={[
-        'relative flex flex-col p-5 rounded-xl bg-brand-surface overflow-hidden group',
+        'relative flex h-full flex-col p-5 rounded-xl bg-brand-surface overflow-hidden group',
         'border transition-colors duration-300',
         isWinner
           ? 'border-brand-cyan/20 glow-cyan hover:border-brand-cyan/40'
@@ -88,6 +88,20 @@ export default function ProjectCard({ project, index = 0, className = '' }: Proj
               aria-label="Watch demo"
             >
               <FaYoutube size={14} />
+            </a>
+          )}
+          {project.links.slides && (
+            <a
+              href={project.links.slides}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="project-link"
+              data-umami-event-project={project.name}
+              data-umami-event-kind="slides"
+              className="text-brand-muted hover:text-brand-primary hover:scale-110 transition-all"
+              aria-label="Presentation deck"
+            >
+              <Presentation size={14} />
             </a>
           )}
           {project.links.demo && (

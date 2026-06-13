@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
+import { FaMedium } from 'react-icons/fa'
 import { fadeUp, staggerContainer, viewportOnce } from '../../lib/motion'
 import SectionHeading from '../ui/SectionHeading'
 
@@ -70,9 +71,10 @@ export default function Writing() {
             rel="noopener noreferrer"
             data-umami-event="article-click"
             data-umami-event-title="Medium profile"
-            className="text-xs font-mono text-brand-secondary hover:text-brand-cyan transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-mono text-brand-secondary hover:text-brand-cyan transition-colors"
           >
-            More articles coming · View on Medium →
+            More articles coming · View on Medium
+            <FaMedium size={15} className="shrink-0" />
           </a>
         </motion.div>
       </motion.div>

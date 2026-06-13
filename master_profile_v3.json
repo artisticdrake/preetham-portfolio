@@ -1,0 +1,809 @@
+{
+  "_meta": {
+    "version": 3,
+    "generated": "2026-06-10",
+    "sources": [
+      "LinkedIn profile export (Profile.pdf)",
+      "Resume_Preetham_Prathipati.pdf",
+      "master_profile.json (v1)",
+      "GitHub READMEs read directly from raw.githubusercontent.com: UniGuide/Chatalogue, cellmapvnn, rainwater-monitoring-system, ProsodyAnalysis, multimodel-learning-disability-detection, space-pirates, PocketBand, Chronicle, DARTS",
+      "LinkedIn announcement post for PocketBand (Music Hackspace x Berklee, MuseHub track)"
+    ],
+    "coverage_note": "GitHub API rate limit on the shared IP remained exhausted across retries, and the repositories tab blocks scraping, so all 24 repos could not be enumerated programmatically. All 9 substantive project repos were read in full from raw.githubusercontent.com. Additional name-probing found only 'preetham-portfolio' (the portfolio source for preethamprathipati.com; README empty). Zenith has no README on its default branch. Remaining repos are minor/forks/course artifacts and are intentionally not listed as projects.",
+    "primary_directive": "Project entries are grounded in actual repo contents. Where the resume/LinkedIn claim something the public repo does not show, it is recorded in `discrepancies_to_reconcile` rather than silently kept or deleted.",
+    "portfolio_repo": "github.com/artisticdrake/preetham-portfolio (source for preethamprathipati.com; README empty - add one)"
+  },
+  "header": {
+    "name": "Preetham Prathipati",
+    "headline_linkedin": "Machine Learning Engineer | GenAI, RAG & LLMs | NLP & Computer Vision | MS CS @ Boston University '26 | 2x Hackathon Winner",
+    "location": "Boston, Massachusetts, United States",
+    "email_primary": "prathipatipreetham@gmail.com",
+    "email_alt": "preeth@bu.edu",
+    "phone": "617-206-0361",
+    "linkedin": "linkedin.com/in/prathipatipreetham",
+    "github": "github.com/artisticdrake",
+    "portfolio": "preethamprathipati.com",
+    "work_authorization": "F-1 OPT / STEM OPT (work-authorized ~3 years, no near-term sponsorship needed; in-US change-of-status to H-1B is exempt from the $100k surcharge)"
+  },
+  "summaries": [
+    {
+      "id": "s_general",
+      "text": "ML Engineer with an MS in Computer Science (Boston University, May 2026), focused on taking applied ML and Generative AI from prototype to production. Won $4,000 at Bio-IT World Hackathon 2026 for NeST-VNN, an interpretable cancer-outcome model in PyTorch with a Bedrock RAG layer. Builds end-to-end systems with rigorous evaluation, documented code, and a bias toward shipping measurable value.",
+      "tags": [
+        "genai",
+        "nlp",
+        "mlops",
+        "ml"
+      ]
+    },
+    {
+      "id": "s_genai",
+      "text": "Applied ML / GenAI engineer focused on RAG, LLM applications, and NLP pipelines. Built a 9-stage local-first NLP course assistant (custom spaCy NER + ML intent classification + deterministic SQL + RAG) and a Bedrock-backed RAG interpretation layer for an award-winning genomics model.",
+      "tags": [
+        "genai",
+        "nlp",
+        "llm",
+        "rag"
+      ]
+    },
+    {
+      "id": "s_healthcare",
+      "text": "ML engineer focused on interpretable AI for healthcare and genomics. Built NeST-VNN (interpretable Visible Neural Network for cancer outcomes, PyTorch + AWS Bedrock) winning $4,000 at Bio-IT World 2026, plus Chronicle, a CHF remote-monitoring pipeline (Oura Ring + ElevenLabs voice agent + Claude clinical synthesis).",
+      "tags": [
+        "healthcare-ai",
+        "ml",
+        "interpretable"
+      ]
+    },
+    {
+      "id": "s_fullstack_realtime",
+      "text": "Full-stack ML engineer who ships complete products, including real-time multi-device systems. Built two phone-as-controller systems over WebSocket/Socket.IO (a music jam station and a multiplayer game) plus a full-stack clinical dashboard and an LLM-powered job-application tracker.",
+      "tags": [
+        "fullstack",
+        "realtime",
+        "genai"
+      ]
+    },
+    {
+      "id": "s_cv",
+      "text": "ML engineer with computer-vision and edge-deployment experience: a campus-wide CV/OCR rainwater monitoring system on Raspberry Pi, YOLO/OpenCV vehicle detection for adaptive traffic control, and a real-time sound-to-tactile wearable, alongside deep NLP and GenAI work.",
+      "tags": [
+        "cv",
+        "edge",
+        "ml"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp_bu",
+      "org": "Boston University (Housing)",
+      "role": "Mailroom Assistant",
+      "location": "Boston, MA",
+      "startDate": "Jan 2025",
+      "endDate": "May 2026",
+      "current": false,
+      "note": "LinkedIn shows this ended May 2026; the resume lists it as 'Present'. Reconcile.",
+      "bullets": [
+        {
+          "text": "Built a Python data-automation tool (pandas/openpyxl) that ingests, validates, and transforms monthly package-report data into scannable barcode records; packaged as a standalone Windows executable and shipped to production, cutting processing time ~26% at peak and still in active use 15+ months later.",
+          "skills": [
+            "python",
+            "pandas",
+            "openpyxl"
+          ],
+          "metric": "26%",
+          "strength": 3
+        },
+        {
+          "text": "Analyzed annual operations data to identify bottlenecks and turned findings into the insights management used in monthly reporting and decisions.",
+          "skills": [
+            "python",
+            "pandas"
+          ],
+          "strength": 2
+        },
+        {
+          "text": "Built a standardized, color-coded residence-to-location reference adopted as the routing standard across every campus mailroom.",
+          "skills": [],
+          "strength": 1
+        }
+      ]
+    },
+    {
+      "id": "exp_jntu",
+      "org": "Jawaharlal Nehru Technological University",
+      "role": "Research Intern — Applied ML",
+      "location": "Hyderabad, India",
+      "startDate": "Aug 2023",
+      "endDate": "Jun 2024",
+      "mentors": [
+        "Dr. K. Shahu Chatrapathi",
+        "Dr. K. M. Lakshmana Rao"
+      ],
+      "bullets": [
+        {
+          "text": "Deployed a CV + OCR rainwater-monitoring system on Raspberry Pi 3B+ with IP cameras (OpenCV edge/line detection + Tesseract OCR) and automated email alerts; mass-produced and deployed campus-wide, improving flood-response time ~30%.",
+          "skills": [
+            "python",
+            "opencv",
+            "ocr"
+          ],
+          "metric": "30%",
+          "strength": 3
+        },
+        {
+          "text": "Built a YOLO + OpenCV vehicle-detection and traffic-analysis model enabling congestion-based automated signal control and long-term trend analysis.",
+          "skills": [
+            "pytorch",
+            "yolov5",
+            "opencv"
+          ],
+          "strength": 3
+        },
+        {
+          "text": "Built and evaluated ML/DL models (scikit-learn, TensorFlow, PyTorch) across CV and IoT problems on Linux; contributed to a speech-API live-translation tool and a gaze-detection exam-integrity system.",
+          "skills": [
+            "scikit-learn",
+            "tensorflow",
+            "pytorch",
+            "linux"
+          ],
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "id": "exp_iiit",
+      "org": "International Institute of Information Technology Hyderabad (IIITH)",
+      "role": "Research Intern — Speech Processing Lab (SRISHTI'23)",
+      "location": "Hyderabad, India",
+      "startDate": "May 2023",
+      "endDate": "Aug 2023",
+      "bullets": [
+        {
+          "text": "Designed a novel prosody dataset for speech-to-speech translation by applying Spleeter voice/music source separation plus energy profiling (Librosa/NumPy) to movie audio — a cross-domain contribution from music-production expertise.",
+          "skills": [
+            "python",
+            "numpy",
+            "librosa"
+          ],
+          "strength": 3
+        },
+        {
+          "text": "Integrated the dataset into the lab's translation pipeline (Git-versioned), improving translation accuracy 8–10% with measured gains in naturalness and intelligibility; presented to a cohort of 20+ researchers.",
+          "skills": [
+            "python",
+            "git"
+          ],
+          "metric": "8–10%",
+          "strength": 3
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_nestvnn",
+      "name": "NeST-VNN / CellMap-VNN — Interpretable Cancer Outcome Prediction",
+      "repo": "github.com/artisticdrake/cellmapvnn",
+      "readme_grounded": true,
+      "dates": "May 2026",
+      "tags": [
+        "healthcare-ai",
+        "ml",
+        "genai",
+        "interpretable",
+        "award",
+        "flagship"
+      ],
+      "tech_stack": [
+        "PyTorch 2.10 (Python 3.12)",
+        "cBioPortal API",
+        "MLflow",
+        "Optuna",
+        "AWS Bedrock (Claude) + OpenAI fallback",
+        "RLIPP explainability",
+        "Flask",
+        "Cytoscape.js",
+        "STRING PPI",
+        "NDEx",
+        "MyGene.info",
+        "SQLite",
+        "Conda"
+      ],
+      "summary": "Interpretable Visible Neural Network whose architecture mirrors a biological ontology hierarchy (NeST / Cell Map) so predictions are explainable at the level of biological systems, not individual genes. Full pipeline: cBioPortal data acquisition, ontology-structured training, per-patient explainability, LLM clinical interpretation, and an interactive web app.",
+      "bullets": [
+        {
+          "text": "Built an interpretable Visible Neural Network in PyTorch whose nodes mirror a hierarchical biological ontology, yielding pathway-level explanations via RLIPP scores, gene scores, and boolean-logic gates rather than black-box outputs.",
+          "strength": 3
+        },
+        {
+          "text": "Engineered the end-to-end pipeline: cBioPortal ingestion (mutations/CNV/fusions) -> transform -> PyTorch training (AdamW, early stopping, gradient masking for ontology sparsity) with MLflow tracking across 20 Optuna trials -> hierarchy annotation.",
+          "strength": 3
+        },
+        {
+          "text": "Built an LLM interpretation pipeline (AWS Bedrock Claude, OpenAI fallback) that turns per-patient model outputs into plain-English clinical reasoning, stored in a structured SQLite DB.",
+          "strength": 3
+        },
+        {
+          "text": "Built the NeST-STRING Explorer: a unified Flask app (port 5001) with a population dashboard, per-patient LLM-interpretation cards, and an interactive Cytoscape.js hierarchy map wired to STRING PPI networks and live NDEx/STRING/MyGene proxies.",
+          "strength": 3
+        },
+        {
+          "text": "Won the $4,000 prize at Bio-IT World Hackathon 2026 (Fair Data Track); judges cited excellence in interpretability. Builds on Nature Cancer (2024) and Cancer Discovery (2024) methodology.",
+          "metric": "$4,000",
+          "strength": 3
+        }
+      ]
+    },
+    {
+      "id": "proj_uniguide",
+      "name": "UniGuide / Chatalogue — University Course NLP Assistant",
+      "repo": "github.com/artisticdrake/UniGuide",
+      "aka": [
+        "Chatalogue (repo title)"
+      ],
+      "readme_grounded": true,
+      "dates": "2024–2025",
+      "tags": [
+        "nlp",
+        "genai",
+        "ml"
+      ],
+      "tech_stack_actual_repo": [
+        "Python 3.10+",
+        "Custom-trained spaCy NER",
+        "Logistic Regression + SentenceTransformers (intent classifier)",
+        "SQLite",
+        "Deterministic parameterized SQL",
+        "RAG",
+        "OpenAI GPT-4.1-mini (optional)",
+        "Tkinter GUI",
+        "RapidFuzz-style fuzzy search"
+      ],
+      "summary": "A local-first, ML-powered 9-stage modular NLP pipeline that answers student questions about courses, instructors, schedules, and locations. Runs entirely offline except for optional LLM enhancement.",
+      "bullets": [
+        {
+          "text": "Architected a 9-stage NLP pipeline: ML intent classification (LogReg + SentenceTransformers) -> custom spaCy NER (COURSE_NAME, COURSE_CODE, INSTRUCTOR, BUILDING, TIME, WEEKDAY, SECTION) -> conversation-context resolution -> fuzzy course mapping -> safe parameterized SQL generation -> SQLite execution -> context update -> RAG prompt construction -> optional GPT-4.1-mini response.",
+          "strength": 3
+        },
+        {
+          "text": "Handles compound, multi-course, multi-attribute queries and contextual follow-ups ('Who teaches it?', 'Where does that class meet?') via an explicit ConversationContext store.",
+          "strength": 3
+        },
+        {
+          "text": "Deterministic SQL layer makes database access safe and structured; LLM is fully optional (system works in SQL-only mode without an API key).",
+          "strength": 2
+        }
+      ],
+      "discrepancy_note": "Public repo shows a local-first Tkinter app on SQLite with spaCy NER + LogReg intent + optional GPT-4.1-mini. The resume/v1 profile instead claim BERT fine-tuning (98% NER), FastAPI microservices, PostgreSQL vector storage, Docker + Jenkins CI/CD, Redis (-35% latency), React/Vite, and 30+ deployed users. None of that infrastructure appears in the public repo. See discrepancies_to_reconcile."
+    },
+    {
+      "id": "proj_pocketband",
+      "name": "PocketBand — Phone-as-Instrument AI Jam Station (NL-controlled synth)",
+      "repo": "github.com/artisticdrake/PocketBand",
+      "readme_grounded": true,
+      "dates": "Jun 2026",
+      "tags": [
+        "genai",
+        "audio-ml",
+        "realtime",
+        "fullstack",
+        "llm",
+        "award",
+        "flagship-secondary"
+      ],
+      "tech_stack": [
+        "Node.js",
+        "Socket.IO over HTTPS",
+        "Web Audio API (from-scratch polyphonic subtractive synth)",
+        "Claude API (natural-language -> 20 synth parameters)",
+        "Suno API (vocals)",
+        "Stable Audio 3 (drums; FastAPI service in WSL2/CUDA, RTX 4080)",
+        "bar-quantized audio clock",
+        "ngrok tunnel",
+        "self-signed cert (iOS gyro permission)",
+        "stem export to DAW"
+      ],
+      "summary": "A phone-as-instrument jam station: scan a QR and your phone becomes a live controller for a synthesizer running on your PC. Scale-locked chord wheel, beatbox looper, and gyro-driven effects. The standout feature judges responded to most: you design sounds by typing plain English ('lush pad', 'dark analog bass') and an LLM maps the description to 20 synthesis parameters, reconfiguring the synth live.",
+      "bullets": [
+        {
+          "text": "Designed the standout feature: a natural-language-to-synthesis-parameters mapping where Claude turns a plain-English description ('lush pad', 'dark analog bass') into 20 live synth parameters, reconfiguring the synth in real time.",
+          "strength": 3
+        },
+        {
+          "text": "Built a polyphonic subtractive synthesizer from scratch in the Web Audio API (oscillators, filters, ADSR envelopes, effects), with presets reverse-engineered from real Serum patches.",
+          "strength": 3
+        },
+        {
+          "text": "Solved the browser-audio timing problem that breaks most web jam tools: a bar-quantized audio clock syncing phone and desktop over WebSocket so loops and layers stay in time.",
+          "strength": 3
+        },
+        {
+          "text": "Integrated three generative-AI services for what each does best: Suno (vocal stems), Stable Audio 3 (drum generation), Claude (NL->parameters) — with graceful fallbacks for every AI call so the live demo never breaks.",
+          "strength": 3
+        },
+        {
+          "text": "Owned the backend and real-time architecture (phone<->desktop relay, AI proxies, audio clock) in a 36-hour two-person build with Athul Thulasidasan on the interface.",
+          "strength": 2
+        },
+        {
+          "text": "Placed 3rd in the MuseHub track at the Music Hackspace x Berklee Music Technology Hackathon, judged by researchers from Google DeepMind, Suno, and Ableton.",
+          "metric": "3rd place",
+          "strength": 3
+        }
+      ],
+      "collaborators": [
+        "Athul Thulasidasan (interface/frontend); Preetham (backend/real-time + AI)"
+      ],
+      "build_context": "Built in 36 hours, two-person team."
+    },
+    {
+      "id": "proj_chronicle",
+      "name": "Chronicle — AI Remote Monitoring for CHF Patients",
+      "repo": "github.com/artisticdrake/Chronicle",
+      "readme_grounded": true,
+      "dates": "May 2026",
+      "tags": [
+        "healthcare-ai",
+        "genai",
+        "fullstack",
+        "realtime"
+      ],
+      "tech_stack": [
+        "Node.js + Express + TypeScript",
+        "ElevenLabs Conversational AI (voice)",
+        "Anthropic Claude (claude-sonnet-4-6)",
+        "Oura Ring API",
+        "React + Vite + Recharts"
+      ],
+      "summary": "Detects early cardiac decompensation in congestive-heart-failure patients by combining passive Oura Ring biometrics with an AI-conducted voice check-in, then routes an AI-generated clinical brief to the care team before an ER visit.",
+      "bullets": [
+        {
+          "text": "Built the pipeline: Oura anomaly -> ElevenLabs AI outbound call conducting an 8-question conversational SOAP assessment -> Claude synthesizes transcript + biometrics into a clinical brief -> clinician approve/escalate/dismiss -> patient SMS.",
+          "strength": 3
+        },
+        {
+          "text": "Designed a 0–175-point decompensation scoring engine (dyspnea, orthopnea, edema, weight gain, missed diuretics, multi-signal Oura anomaly) with urgent/review/monitor thresholds.",
+          "strength": 3
+        },
+        {
+          "text": "Added adaptive alert suppression: after 3 consecutive clinician rejections for a patient, the review threshold raises automatically to prevent alert fatigue.",
+          "strength": 2
+        },
+        {
+          "text": "Built a React/Vite/Recharts clinician dashboard (plus patient and dev views). Selected by FOMO for investor introductions and Foundry follow-up.",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "id": "proj_spacepirates",
+      "name": "Space Pirates (Rogue Space Pirates) — Phone-Controlled Multiplayer Game",
+      "repo": "github.com/artisticdrake/space-pirates",
+      "readme_grounded": true,
+      "dates": "Apr 2026",
+      "tags": [
+        "games",
+        "realtime",
+        "fullstack"
+      ],
+      "tech_stack_actual_repo": [
+        "Godot 4 / GDScript (game engine)",
+        "Node.js relay server",
+        "Socket.IO over HTTPS (phone)",
+        "plain WebSocket (Godot<->server)",
+        "DeviceOrientation API (phone gyro)",
+        "self-signed cert (selfsigned)",
+        "procedural audio (AudioStreamWAV PCM)"
+      ],
+      "summary": "A local multiplayer party brawler where each player's smartphone is a motion controller. Game runs on a TV/monitor; up to 5 phones connect as gyroscope controllers. Themed around teaching real cybersecurity/data-privacy concepts through gameplay.",
+      "bullets": [
+        {
+          "text": "Three real-time components: a Godot 4 game (GDScript) <-WebSocket-> a Node.js relay <-Socket.IO/HTTPS-> phone browser controllers, forwarding gyro input at ~60fps via volatile emit to keep controls live.",
+          "strength": 3
+        },
+        {
+          "text": "Implemented server-side slot/color management with state replay so a reconnecting Godot client instantly resyncs the lobby; six ship classes, five game modes, and per-viewport split-screen.",
+          "strength": 2
+        },
+        {
+          "text": "Solved the iOS secure-context constraint (deviceorientation only fires over HTTPS) with auto-generated self-signed certs; generated all SFX procedurally at runtime as raw 16-bit PCM.",
+          "strength": 2
+        },
+        {
+          "text": "Built largely solo at SharkHack 2026 after a teammate dropped out; judges played it enthusiastically.",
+          "strength": 2
+        }
+      ],
+      "discrepancy_note": "Resume/v1 profile list the stack as 'Three.js, WebSockets, Node.js, JavaScript'. The actual repo is a Godot 4 / GDScript game with a Node.js + Socket.IO bridge — there is no Three.js. Correct this everywhere."
+    },
+    {
+      "id": "proj_zenith",
+      "name": "Zenith — AI-Powered Job Application Tracker (SaaS)",
+      "repo": "github.com/artisticdrake/Zenith",
+      "readme_grounded": false,
+      "dates": "2024–2026",
+      "tags": [
+        "fullstack",
+        "genai",
+        "llm"
+      ],
+      "tech_stack": [
+        "React",
+        "Vite",
+        "Node.js",
+        "Express",
+        "Supabase",
+        "Google OAuth",
+        "OpenAI GPT-4o-mini",
+        "TypeScript"
+      ],
+      "summary": "Full-stack LLM-powered tracker with a deterministic resume–JD matching engine and a resume builder.",
+      "bullets": [
+        {
+          "text": "Built a full-stack tracker (React/Vite + Node/Express + Supabase + Google OAuth) with a resume builder (Jake's Resume live preview, LaTeX export, one-page auto-fit).",
+          "strength": 2
+        },
+        {
+          "text": "Engineered a deterministic resume–JD matching engine (canonical skill dictionary, regex section parsing, implied-skill inference) to replace unreliable LLM scoring, plus a GPT-4o-mini autofill endpoint extracting structured job data from raw URLs and SHA-256 resume dedup.",
+          "strength": 3
+        }
+      ],
+      "action_item": "No README found on the default branch. Add one (architecture, the deterministic matcher rationale, screenshots) before listing it prominently."
+    },
+    {
+      "id": "proj_learning_disability",
+      "name": "Predicting Learning Difficulties in Children (ML Classification)",
+      "repo": "github.com/artisticdrake/multimodel-learning-disability-detection",
+      "readme_grounded": true,
+      "dates": "2024",
+      "tags": [
+        "ml",
+        "data",
+        "healthcare-ai"
+      ],
+      "tech_stack": [
+        "R",
+        "Random Forest",
+        "under-sampling",
+        "feature engineering"
+      ],
+      "summary": "Multiple classification models predicting child learning difficulty on a NHIS dataset (7,439 records, 353 variables, ~9:1 imbalance). Best model: Random Forest with under-sampling.",
+      "bullets": [
+        {
+          "text": "Best model (Random Forest + under-sampling) reached 86.5% balanced accuracy, 86.1% sensitivity (TPR-Yes), 86.8% specificity, AUC 0.938 — at a fixed 0.5 threshold (no tuning allowed).",
+          "metric": "86.5%",
+          "strength": 3
+        },
+        {
+          "text": "Engineered missing-indicator features (>5% missingness), median/mode imputation, near-zero-variance filtering tuned to preserve rare predictive medical conditions, and removed a data-leaking variable (ldnw_c) after review.",
+          "strength": 2
+        }
+      ],
+      "discrepancy_note": "README states the dataset is the 2024 NHIS child dataset; the v1 profile/resume said 2019. Confirm the correct year. (Class split per README: 89.8% No / 10.2% Yes.)"
+    },
+    {
+      "id": "proj_rainwater",
+      "name": "Real-Time Rainwater Monitoring System",
+      "repo": "github.com/artisticdrake/rainwater-monitoring-system",
+      "readme_grounded": true,
+      "dates": "2023–2024",
+      "tags": [
+        "cv",
+        "edge",
+        "iot"
+      ],
+      "tech_stack": [
+        "Raspberry Pi 3B+",
+        "2MP IR/night-vision IP camera",
+        "OpenCV (edge + line detection)",
+        "Tesseract OCR",
+        "Python",
+        "scheduled power management"
+      ],
+      "summary": "Computer-vision + OCR water-level monitoring with automated email alerts, day/night capable, power-efficient 10-minute cycles. Deployed campus-wide; cut flood-response time ~30%.",
+      "bullets": [
+        {
+          "text": "Captured water-tub images via IP camera, detected levels with OpenCV edge/line detection, extracted numeric readings via Tesseract OCR, and sent automated threshold-based email alerts.",
+          "metric": "30%",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "id": "proj_prosody",
+      "name": "ProsodyAnalysis — Voice/Music Separation for Speech-to-Speech Translation",
+      "repo": "github.com/artisticdrake/ProsodyAnalysis",
+      "readme_grounded": true,
+      "dates": "2023",
+      "tags": [
+        "nlp",
+        "audio-ml",
+        "research"
+      ],
+      "tech_stack": [
+        "Spleeter (2-stem)",
+        "Librosa",
+        "NumPy",
+        "Matplotlib/Seaborn",
+        "Jupyter/Colab"
+      ],
+      "summary": "Novel technique isolating voice and music from movie audio (Spleeter + energy profiling) to auto-generate a prosody dataset for speech-to-speech translation. IIIT Hyderabad, SRISHTI'23.",
+      "bullets": [
+        {
+          "text": "Built an energy-profiling framework distinguishing 'only voice' vs 'voice+music' segments and a comparative-visualization pipeline; produced a cleaned, labeled dataset for prosody extraction and TTS/translation conditioning.",
+          "strength": 2
+        },
+        {
+          "text": "Reported gains: prosody-feature-extraction accuracy 78.2%->86.5% (+8.3pp), model intelligibility 84.0%->91.2% (+7.2pp), subjective naturalness 6.9->7.8/10.",
+          "metric": "+8.3pp",
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "id": "proj_darts",
+      "name": "DARTS — Deaf Assistance Real-Time Sound-to-Tactile Wearable",
+      "repo": "github.com/artisticdrake/DARTS",
+      "readme_grounded": true,
+      "dates": "2023",
+      "tags": [
+        "ml",
+        "edge",
+        "healthcare-ai",
+        "audio-ml"
+      ],
+      "tech_stack": [
+        "Raspberry Pi 4B",
+        "2-mic MEMS array",
+        "PyAudio/SoundDevice",
+        "TensorFlow/Keras NN",
+        "MFCC",
+        "TDOA",
+        "PWM vibration motor",
+        "systemd auto-boot"
+      ],
+      "summary": "Wearable that translates environmental sounds into tactile feedback for the hearing-impaired, running fully on a Raspberry Pi 4: continuous dual-mic listening, sound classification, direction/proximity estimation, and intensity-scaled vibration alerts.",
+      "bullets": [
+        {
+          "text": "Real-time pipeline: dual-mic capture -> MFCC/spectrogram features -> neural-network sound classifier -> TDOA + amplitude-ratio proximity/direction estimation -> PWM-driven vibration patterns (e.g. siren = continuous buzz, speech = rhythmic pulses).",
+          "strength": 2
+        },
+        {
+          "text": "Achieved ~95% classification accuracy across 20+ critical sound classes and <200ms end-to-end latency on-device; <150g wearable prototype, auto-starting via systemd.",
+          "metric": "95% / <200ms",
+          "strength": 2
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "award_bioit",
+      "title": "Bio-IT World Hackathon 2026 — Prize Winner ($4,000), Fair Data Track",
+      "detail": "Team of 4; judges cited excellence in model interpretability (NeST-VNN).",
+      "date": "May 2026",
+      "tags": [
+        "healthcare-ai",
+        "ml",
+        "award"
+      ]
+    },
+    {
+      "id": "award_musichackspace",
+      "title": "Music Hackspace x Berklee Music Technology Hackathon — 3rd Place (MuseHub track)",
+      "detail": "For PocketBand (phone-as-instrument AI jam station). Judged by researchers from Google DeepMind, Suno, and Ableton. Built in 36 hours with Athul Thulasidasan.",
+      "date": "Jun 2026",
+      "tags": [
+        "audio-ml",
+        "genai",
+        "award"
+      ],
+      "judges": [
+        "Google DeepMind",
+        "Suno",
+        "Ableton"
+      ]
+    },
+    {
+      "id": "award_iiit",
+      "title": "National ML Ranking — 2nd of 364 (Foundations of Modern Machine Learning, IIIT Hyderabad)",
+      "detail": "Top 0.6% nationally.",
+      "date": "2023",
+      "tags": [
+        "ml",
+        "award"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "8th Summer School on AI — Research Intern (Machine Learning)",
+      "issuer": "IIIT Hyderabad"
+    },
+    {
+      "title": "Foundations of Modern Machine Learning",
+      "issuer": "IIIT Hyderabad",
+      "note": "2nd of 364 nationally"
+    },
+    {
+      "title": "Summer Research Internship on Technological Innovations — SRISHTI'23",
+      "issuer": "IIIT Hyderabad"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Boston University",
+      "degree": "Master of Science, Computer Science",
+      "field": "ML Engineering & Data Analytics",
+      "startDate": "Jul 2024",
+      "endDate": "May 2026",
+      "location": "Boston, MA",
+      "coursework": [
+        "Advanced Machine Learning",
+        "Data Mining",
+        "Web Mining & Graph Analytics",
+        "Software Engineering",
+        "Foundations of Analytics"
+      ]
+    },
+    {
+      "institution": "JNTUH College of Engineering Hyderabad",
+      "degree": "Bachelor of Technology, Computer Science & Engineering",
+      "field": "Artificial Intelligence & Machine Learning",
+      "startDate": "2020",
+      "endDate": "2024",
+      "location": "Hyderabad, India"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "R",
+      "GDScript",
+      "C/C++",
+      "Java"
+    ],
+    "nlp_genai": [
+      "RAG",
+      "LLM application engineering",
+      "LLM routing (local + API)",
+      "spaCy NER",
+      "SentenceTransformers",
+      "intent classification",
+      "FAISS / vector search",
+      "LangChain",
+      "Hugging Face Transformers",
+      "OpenAI API",
+      "AWS Bedrock (Claude)",
+      "prompt engineering"
+    ],
+    "ml_dl": [
+      "PyTorch",
+      "TensorFlow / Keras",
+      "scikit-learn",
+      "Random Forest",
+      "XGBoost",
+      "interpretable ML (RLIPP / Visible Neural Networks)",
+      "MLflow",
+      "Optuna",
+      "feature engineering",
+      "imbalanced learning (under-sampling/SMOTE)",
+      "neural networks",
+      "transfer learning"
+    ],
+    "audio_ml": [
+      "Web Audio API",
+      "Spleeter source separation",
+      "Librosa",
+      "MFCC",
+      "real-time DSP",
+      "Stable Audio 3",
+      "Suno API"
+    ],
+    "computer_vision_edge": [
+      "OpenCV",
+      "YOLO",
+      "Tesseract OCR",
+      "Raspberry Pi",
+      "MEMS mic arrays",
+      "TDOA",
+      "edge inference"
+    ],
+    "mlops_cloud": [
+      "Docker",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Socket.IO / WebSockets",
+      "AWS Bedrock",
+      "GCP",
+      "Git",
+      "Linux",
+      "WSL2/CUDA",
+      "MLflow",
+      "ngrok"
+    ],
+    "data_backend": [
+      "PostgreSQL",
+      "Supabase",
+      "SQLite",
+      "pandas",
+      "NumPy"
+    ],
+    "web_fullstack": [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "Tailwind CSS",
+      "Cytoscape.js",
+      "Recharts",
+      "Tkinter"
+    ],
+    "note": "GDScript and audio-ML (Web Audio, Spleeter, SA3, Suno) are repo-proven but missing from the current resume's skills section — consider adding for music/AI and real-time roles."
+  },
+  "positioning_assets": {
+    "flagship": "NeST-VNN ($4,000 Bio-IT World win, interpretable cancer ML)",
+    "production_proof": "9-stage NLP course assistant (deterministic SQL + RAG); CV/OCR system deployed campus-wide",
+    "shipping_pattern": "3 hackathon results in one quarter: Bio-IT 2nd/$4K, Music Hackspace 3rd, FOMO investor pick (Chronicle)",
+    "real_time_systems_proof": "Two independent phone-as-controller systems over Socket.IO/WebSocket (PocketBand, Space Pirates) sharing a self-signed-cert + low-latency pattern",
+    "differentiator": "ML depth + full-stack + audio/music-AI creative angle; Boston biotech/health-AI fit (NeST-VNN, Chronicle)",
+    "target_roles": "ML Engineer / Applied Science / GenAI Engineer (per latest LinkedIn post); also AI Solutions / Forward Deployed Engineer",
+    "creative_ai_proof": "PocketBand: from-scratch Web Audio synth + LLM natural-language sound design, judged by DeepMind/Suno/Ableton — a rare, memorable signal for AI x creative-tools roles."
+  },
+  "discrepancies_to_reconcile": [
+    {
+      "item": "LinkedIn URL",
+      "resume": "linkedin.com/in/preethamprathipati",
+      "truth": "linkedin.com/in/prathipatipreetham (live, per LinkedIn export)",
+      "action": "Fix the resume; verify the dead one isn't linked anywhere."
+    },
+    {
+      "item": "Primary email",
+      "resume": "preeth@bu.edu",
+      "linkedin": "prathipatipreetham@gmail.com",
+      "action": "Pick one consistent contact email across resume/LinkedIn/GitHub. The bu.edu address may expire after graduation."
+    },
+    {
+      "item": "UniGuide/Chatalogue infrastructure",
+      "resume": "BERT fine-tuning (98% NER), FastAPI microservices, PostgreSQL vector storage, Docker + Jenkins CI/CD, Redis (-35% latency), React/Vite, 30+ users",
+      "repo_truth": "Local-first Tkinter app on SQLite; spaCy NER + LogReg/SentenceTransformers intent; optional GPT-4.1-mini",
+      "action": "Major mismatch. Either the public repo is an older/local version (then push the deployed code or stop claiming infra you can't show) or correct the resume to match the repo. An interviewer who clicks will notice."
+    },
+    {
+      "item": "Space Pirates stack",
+      "resume": "Three.js, WebSockets, Node.js, JavaScript",
+      "repo_truth": "Godot 4 / GDScript game + Node.js + Socket.IO bridge (no Three.js)",
+      "action": "Correct everywhere; GitHub already tags the repo as GDScript."
+    },
+    {
+      "item": "Mailroom end date",
+      "resume": "Present",
+      "linkedin": "ended May 2026",
+      "action": "Reconcile; if it ended, say so."
+    },
+    {
+      "item": "Learning-disability dataset year",
+      "resume_v1": "2019 NHIS",
+      "repo_truth": "2024 NHIS",
+      "action": "Confirm the correct survey year."
+    },
+    {
+      "item": "Zenith README",
+      "status": "No README on default branch",
+      "action": "Add one before featuring the repo."
+    },
+    {
+      "item": "Mailroom tool tech",
+      "resume": "ReportLab, PostgreSQL",
+      "linkedin/v1": "pandas/openpyxl, standalone Windows executable",
+      "action": "Pick the accurate stack."
+    }
+  ]
+}

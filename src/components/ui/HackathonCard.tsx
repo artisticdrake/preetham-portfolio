@@ -10,8 +10,9 @@ interface HackathonCardProps {
 
 export default function HackathonCard({ hackathon }: HackathonCardProps) {
   const isWinner = hackathon.prize !== null
-  // Placements and selections without prize money still deserve the accent treatment
-  const isNotable = isWinner || hackathon.result !== 'Participated'
+  // Placements and selections without prize money still deserve the accent treatment,
+  // as do entries explicitly flagged for the halo.
+  const isNotable = isWinner || hackathon.result !== 'Participated' || !!hackathon.highlight
   const stat = hackathon.stat ?? hackathon.prize
 
   return (
@@ -71,17 +72,33 @@ export default function HackathonCard({ hackathon }: HackathonCardProps) {
         {hackathon.description}
       </p>
 
-      {hackathon.youtube && (
-        <a
-          href={hackathon.youtube}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-umami-event="hackathon-demo"
-          data-umami-event-name={hackathon.name}
-          className="text-xs font-mono text-brand-cyan hover:text-brand-primary transition-colors flex items-center gap-1 w-fit mb-4"
-        >
-          Watch Demo →
-        </a>
+      {(hackathon.youtube || hackathon.projectUrl) && (
+        <div className="flex items-center gap-4 mb-4 flex-wrap">
+          {hackathon.youtube && (
+            <a
+              href={hackathon.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="hackathon-demo"
+              data-umami-event-name={hackathon.name}
+              className="text-xs font-mono text-brand-cyan hover:text-brand-primary transition-colors flex items-center gap-1 w-fit"
+            >
+              Watch Demo →
+            </a>
+          )}
+          {hackathon.projectUrl && (
+            <a
+              href={hackathon.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="hackathon-project"
+              data-umami-event-name={hackathon.name}
+              className="text-xs font-mono text-brand-cyan hover:text-brand-primary transition-colors flex items-center gap-1 w-fit"
+            >
+              View Project →
+            </a>
+          )}
+        </div>
       )}
 
       <div className="flex flex-wrap gap-1.5">
